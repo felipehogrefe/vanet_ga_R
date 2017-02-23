@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "Genetic <- function(M = matrix(),popSize,nRSUs,tTime){\n  \n  set.seed(62)\n  \n  greedyPopulationSize <- popSize/2\n  randPopulationSize <- popSize - greedyPopulationSize\n  numberOfVehicles <- ncol(M)\n  numberOfIntersections <- nrow(M)\n  \n  population <- sapply(1:randPopulationSize, function(x) sample(1:numberOfIntersections,nRSUs))\n  \n  population <- cbind(population, sapply(1:greedyPopulationSize, function(x) GenerateRGreedyIndividual(M,nRSUs,tTime)))\n  \n  print(length(population))\n}",
+    "created" : 1487887155136.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "283518041",
+    "id" : "ED1F0353",
+    "lastKnownWriteTime" : 1487892214,
+    "last_content_update" : 1487892214081,
+    "path" : "C:/Users/Felipe/workspace/vanet_ga_R/genetic.R",
+    "project_path" : "genetic.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
