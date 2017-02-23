@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "matrix <- data.matrix(read.table(\"Scenes/E3-T-60s-4CP\"))\n\nGenerateRGreedyIndividual(matrix, 5, 30)\n\n\n",
+    "created" : 1487807725978.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1284422407",
+    "id" : "E1732F5F",
+    "lastKnownWriteTime" : 1487812400,
+    "last_content_update" : 1487812400521,
+    "path" : "C:/Users/Felipe/workspace/vanet_ga_R/run.R",
+    "project_path" : "run.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

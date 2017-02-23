@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "GenerateRGreedyIndividual <- function(M = matrix(), k, tTime){\n  # returns a random individual\n  \n  numberOfVehicles <- nrow(M)\n  numberOfIntersections <- ncol(M)\n  qtdIndividuals <- k\n  \n  #initialize individual\n  s <- c()\n  \n  #initialize tj\n  tj <- c(rep.int(x = tTime, times = numberOfVehicles))\n  \n  while(qtdIndividuals > 0){\n    W <- c()\n    for(i in 1:numberOfIntersections){\n      wr <- 0\n      for(v in 1:numberOfVehicles){\n        vTime <- M[i][v]\n        \n        if(vTime > tj[v]){\n          vTime <- tj[v]\n        }\n        wr = wr+vTime\n      }\n      W <- append(W,wr)\n    }\n    \n    \n    \n    qtdIndividuals = qtdIndividuals+1\n  }\n\n  s\n}\n\nrandTopTen <- function(W,s){\n  Ws <- sample(sort(W,decreasing = TRUE))\n  choice <- sample(1:10, 1)\n  \n  \n  \n}",
+    "created" : 1487781009120.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4091482242",
+    "id" : "DD17A66E",
+    "lastKnownWriteTime" : 1487781691,
+    "last_content_update" : 1487782062707,
+    "path" : "~/workspace/vanet_ga/greedy.R",
+    "project_path" : "greedy.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "matrix <- data.matrix(read.table(\"Scenes/E3-T-60s-4CP\"))\n\nprint(ncol(matrix))\nprint(nrow(matrix))\n\n\n",
+    "created" : 1487780881191.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3424231095",
+    "id" : "90254181",
+    "lastKnownWriteTime" : 1487781003,
+    "last_content_update" : 1487781003357,
+    "path" : "~/workspace/vanet_ga/run.R",
+    "project_path" : "run.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
